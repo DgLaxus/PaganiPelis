@@ -5,47 +5,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PaganiPelis</title>
+  <title>Mi Página Web con Video</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       text-align: center;
       background-color: #f4f4f4;
       margin: 0;
-      padding: 20px;
+      padding: 0;
     }
     .video-container {
-      position: relative;
-      padding-bottom: 56.25%; /* 16:9 aspect ratio */
-      height: 0;
-      overflow: hidden;
-      max-width: 100%;
-      background: #000;
-      margin: 0 auto;
-      allowfullscreen;
-    }
-    .video-container iframe, .video-container script {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      border: 0;
-      frameborder: 0;
-      scrolling: no;
     }
   </style>
 </head>
 <body>
-  <h1>PaganiPelis</h1>
-  <p>Era De Hielo4:</p>
-  <!-- Contenedor para el video incrustado -->
   <div class="video-container">
-    <!-- Nuevo código de incrustación del video -->
-    <div class="sp-embed-player" data-id="cZjt1qVRnZp">
-      <script src="https://go.screenpal.com/player/appearance/cZjt1qVRnZp"></script>
-      <iframe src="https://go.screenpal.com/player/cZjt1qVRnZp?width=100" allowfullscreen="true" frameborder="0" scrolling="no"></iframe>
-    </div>
+    <iframe src="https://go.screenpal.com/watch/cZjt1qVRnZp" allowfullscreen="true" frameborder="0" scrolling="no" width="100%" height="100%"></iframe>
   </div>
 </body>
 </html>
