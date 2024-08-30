@@ -1,49 +1,52 @@
+
+```
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web con Video</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 20px;
-        }
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio */
-            height: 0;
-            overflow: hidden;
-            max-width: 100%;
-            background: #000;
-            margin: 0 auto;
-        }
-        .video-container iframe, 
-        .video-container script {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 0;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Página Web con Video</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+      background: #000;
+      margin: 0 auto;
+      allowfullscreen;
+    }
+    .video-container iframe, .video-container script {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      frameborder: 0;
+      scrolling: no;
+    }
+  </style>
 </head>
 <body>
-    <h1>Bienvenido a Mi Página Web</h1>
-    <p>A continuación, puedes ver un video incrustado:</p>
-    
-    <!-- Contenedor para el video incrustado -->
-    <div class="video-container">
-        <!-- Nuevo código de incrustación del video -->
-        <div class="sp-embed-player" data-id="cZjt1qVRnZp">
-            <script src="https://go.screenpal.com/player/appearance/cZjt1qVRnZp"></script>
-            <iframe src="https://go.screenpal.com/player/cZjt1qVRnZp?width=100%&height=100%&ff=1&title=0" allowfullscreen="true"></iframe>
-        </div>
+  <h1>Bienvenido a Mi Página Web</h1>
+  <p>A continuación, puedes ver un video incrustado:</p>
+  <!-- Contenedor para el video incrustado -->
+  <div class="video-container">
+    <!-- Nuevo código de incrustación del video -->
+    <div class="sp-embed-player" data-id="cZjt1qVRnZp">
+      <script src="https://go.screenpal.com/player/appearance/cZjt1qVRnZp"></script>
+      <iframe src="https://go.screenpal.com/player/cZjt1qVRnZp?width=100"allowfullscreen="true" frameborder="0" scrolling="no"></iframe>
     </div>
-
+  </div>
 </body>
 </html>
+```
