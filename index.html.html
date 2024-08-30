@@ -3,34 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Video</title>
+    <title>Mi Página Web con Video ScreenPal</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            text-align: center;
+            background-color: #f4f4f4;
             margin: 0;
-            background-color: #f0f0f0;
-        }
-        #video-container {
-            max-width: 90%;
-            margin: auto;
-            background-color: #fff;
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        iframe {
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            margin: 0 auto;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
             height: 100%;
-            border: 0;
         }
     </style>
 </head>
 <body>
-    <div id="video-container">
+    <h1>Bienvenido a Mi Página Web</h1>
+    <p>A continuación, puedes ver un video incrustado:</p>
+    
+    <!-- Contenedor para el video incrustado -->
+    <div class="video-container">
         <iframe width="1280" height="720" style="border:0;" scrolling="no" src="https://go.screenpal.com/player/cZjtiMVRn5c?width=1280&height=720&ff=1&title=0&controls=0&a=1" allowfullscreen="true"></iframe>
     </div>
+
 </body>
 </html>
